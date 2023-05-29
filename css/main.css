@@ -1,0 +1,285 @@
+/*====================GLOBAL========================*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+	background-color: black;
+}
+header{
+	background-color: black;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+video{
+	width:100%;
+	height:auto;
+}
+
+.hide{
+	display: none;
+}
+
+/*====================FREQUENTLY USED=========================*/
+.full-span{
+	grid-column: 1/span 12;
+}
+
+.divider{
+	border-bottom:0.8px solid white;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.margin-zero{
+	margin:0;
+}
+
+.bottom-margin-zero{
+	margin-bottom: 0;
+}
+
+.top-margin-zero{
+	margin-top: 0;
+}
+
+.extra-padding{
+	padding-bottom: 10%;
+}
+
+.extra-top-padding{
+	padding-top:3%;
+}
+
+.two-grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.5625rem;
+}
+
+.column-one{
+	grid-column: 1;
+}
+
+.column-two{
+	grid-column: 2;
+}
+
+.extra-right-padding{
+	padding-right: 10%;
+}
+
+.border{
+	border: 0.8px solid white;
+}
+
+.border-margin{
+	margin: 20px;
+}
+
+.upper-line{
+	border-top:0.8px solid white;
+}
+
+.under-line{
+	border-bottom:0.8px solid white;
+}
+.flex-space-between{
+	display:flex;
+	justify-content: space-between;
+}
+
+.align-self-end{
+	align-self: end;
+}
+
+/*====================TYPOGRAPHY=========================*/
+h1{
+	font-family: 'Questrial', sans-serif;
+	font-size:2rem;
+	font-weight: 300;
+	color:white;
+	max-width:80ch;
+}
+
+h2{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size:1.25rem;
+	font-weight: 400;
+	color:white;
+/*	max-width:45ch;*/
+}
+
+h3{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size:1rem;
+	font-weight: 400;
+	color:white;
+	max-width:50ch;
+}
+
+h4{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size:0.9rem;
+	font-weight: 400;
+	color:white;
+	max-width:50ch;
+}
+
+h5{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size:1rem;
+	font-style: italic;
+	font-weight: 400;
+	color:white;
+	max-width:50ch;
+}
+
+a{
+	text-decoration: none;
+	color: #E3FF45;
+}
+
+p, li{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size:0.8rem;
+	font-weight:400;
+	max-width:80ch;
+	color:white;
+}
+
+em{
+	text-decoration: underline white;
+}
+
+/*====================COLOUR AND DECO=========================*/
+.black{
+	color:black;
+}
+
+.green{
+	color:#E3FF45;
+}
+
+/***BACK TO TOP BUTTON***/
+#topButton{
+	cursor: pointer;
+}
+
+.back-to-top{
+	grid-column: 1/span 12;
+	justify-self: center;
+}
+
+#topButton:hover{
+	text-decoration:underline white;
+}
+
+/*====================TOP NAV=========================*/
+
+.main-nav-container{
+	margin: 0 5% 0 5%;
+	padding: 10px 0 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.right-nav-items{
+	display: flex;
+	gap:25px;
+}
+
+/*====================LANDING=========================*/
+
+.landing-info{
+	margin: 3rem 10rem;
+}
+
+.two-column{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	gap:1rem;
+}
+
+.space-between{
+	display:flex;
+	justify-content: space-between;
+}
+
+.no-top-margin{
+	margin-top:0;
+}
+
+.no-bottom-margin{
+	margin-bottom: 0;
+}
+
+.more-bottom-margin{
+	margin-bottom:2rem;
+}
+
+.more-top-margin{
+	margin-top: 5rem;
+}
+
+/*====================PROJECT SECTION=========================*/
+
+#projects{
+	grid-column: 1/span 12;
+}
+
+.project{
+	border-top:0.8px solid white;
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap:1.5625rem;
+}
+
+.project-info{
+	display:flex;
+	flex-direction: column;
+}
+
+/*====================PROJECT PAGES=========================*/
+.project-info-grid{
+	display:grid;
+	grid-template-columns: 20% 80%;
+}
+
+
+/*====================FOOTER=========================*/
+.footer{
+	border-top:0.8px solid white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footer-left-item{
+	justify-self: left;
+	grid-column: 1;
+	margin-top:2rem;
+}
+
+.back-to-top{
+	justify-self: center;
+	grid-column: 2;
+	margin-top:2rem;
+}
+
+.footer-right-item{
+	justify-self: right;
+	grid-column: 3;
+	margin-top:2rem;
+}
+
+
